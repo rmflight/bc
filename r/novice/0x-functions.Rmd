@@ -1,0 +1,5 @@
+Assumes that data types, variables, etc have already been introduced.
+
+# Personal Functions
+
+We've already introduced the idea of putting a series of commands together. Wouldn't it be great to group a series of data transformations together into functions that we could re-use?
