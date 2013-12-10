@@ -1,10 +1,12 @@
-Assumes that data types, variables, etc have already been introduced.
+Assumes that data types, variables, etc have already been introduced. 3 minutes is not enough time to introduce scope, pass by copy, etc, that would be more material later.
 
 # Personal Functions
 
 We've already introduced the idea of putting a series of commands together. Wouldn't it be great to group a series of data transformations together into functions that we could re-use later?
 
 We've already been using `R`'s built in functions in our analyses, functions such as `min`, `max`, `std`, `plot`. Similar to other languages, `R` also makes it fairly easy to write our own functions.
+
+## Basic Function
 
 `R` has a function called `function` to make **new** functions. Just as we previously assigned `values` to `variables` (i.e. `myVar <- 1`), we do a similar process for `functions`:
 
@@ -20,3 +22,31 @@ Here we are assigning a `function` definition to `myFunction`. This particular f
 myFunction()
 ```
 
+Notice that this returns a `NULL` value, or **nothing** in the language of `R`.
+
+## Return a Value
+
+Lets change this so we actually assign and return a value:
+
+```{r}
+myFunction <- function(){
+  x <- 2
+  return(x)
+}
+
+```
+
+Notice all we have done is write our usual variable assignment in the function body. Then, when we call the function, the value of the variable (`x` in this case) is returned.
+
+```{r}
+myFunction()
+```
+
+We can call this like any other function, including assigning the value that is returned to a new variable:
+
+```{r}
+myVar <- myFunction()
+myVar
+```
+
+## Input Variables
