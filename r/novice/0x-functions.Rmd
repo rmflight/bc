@@ -50,3 +50,28 @@ myVar
 ```
 
 ## Input Variables
+
+Now let's make the function do something useful with input varibles. We can start by simply having a function square the value of x.
+
+```{r}
+myFunction <- function(x){
+  x2 <- x ^ 2
+  return(x2)
+}
+```
+
+We can use this function like any other function in R.
+
+```{r}
+myFunction(x = 2)
+
+v <- c(1, 2, 3, 4, 5)
+myFunction(v)
+```
+
+In pairs or groups of 3, think about the functions you know in R and write your own custom function that takes two input values (x & y) and adds them together. Can you give y a default value of 0, so that if y is not entered the value of x is returned?
+
+
+
+
+
