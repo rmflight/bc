@@ -72,6 +72,24 @@ myFunction(v)
 In pairs or groups of 3, think about the functions you know in R and write your own custom function that takes two input values (x & y) and adds them together. Can you give y a default value of 0, so that if y is not entered the value of x is returned?
 
 
+### Answers
 
+```{r}
+addTwo <- function(x, y){
+  z <- x + y
+  return(z)
+}
 
+addTwo(1, 2)
+```
+
+```{r}
+addTwoDefault <- function(x, y = 0){
+  z <- x + y
+  return(z)
+}
+
+addTwoDefault(1, 2)
+addTwoDefault(1)
+```
 
